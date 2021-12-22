@@ -1,0 +1,10 @@
+<%= form_with(model: @question, local: true) do |f| %>
+  <div>
+    <%= f.text_field :title %>
+  </div><br>
+  <div>
+    <%= f.text_area :body %>
+  </div><br>
+  <%= f.submit %>
+<% end %>
+
